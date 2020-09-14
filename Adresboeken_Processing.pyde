@@ -10,9 +10,9 @@ def setup():
     global img
     global words
     words = []
-    img = loadImage("MMUTRA01_001427001_00015_master.jpg")
+    img = loadImage("MMUTRA01_001491001_01000_access.jpg")
     global xml
-    xml = loadXML("MMUTRA01_001427001_00015_master.xml")
+    xml = loadXML("MMUTRA01_001491001_01000_access.xml")
     for page in xml.getChildren("Page"):
         w = page.getString("imageWidth")
         h = page.getString("imageHeight")
@@ -87,7 +87,7 @@ def keyPressed():
         type = "adres"
     elif key=='/':
        for word in words:
-           if word.txt.startswith("("):
+           if word.txt.strip().startswith("(") or word.txt.strip().endswith(")"):
                word.type = "voornaam"
         
         
