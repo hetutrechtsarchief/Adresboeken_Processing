@@ -9,7 +9,7 @@ namen:
 <img src="doc/namen-lookup.jpg">
 
 straten:
-<img srtc="doc/adressen-lookup.jpg">
+<img src="doc/adressen-lookup.jpg">
 
 ## Annotorius
 Ook nuttig om te bekijken voor als je een oplossing zoekt die in de webbrowser werkt: https://recogito.github.io/annotorious/getting-started/web-annotation/
