@@ -11,7 +11,7 @@ achternamen_blacklist = {}
 beroepen = {}
 viewport = None
 basename = "MMUTRA01_001427001_00015_master"
-#basename = "MMUTRA01_001491001_01000_access"
+# basename = "MMUTRA01_001491001_01000_access"
 out = None
 
 def setup():
@@ -91,7 +91,7 @@ def draw():
     for word in words:
         word.updateBounds()
         if (word.bounds.intersects(Rect(mouseX, mouseY, 2, 2))):
-            text(trim(word.txt).strip(","), mouseX, mouseY)
+            text(trim(word.txt), mouseX, mouseY)
 
     # viewport.end()
 
@@ -147,7 +147,10 @@ def keyPressed():
 
     elif key == 'B':
         for word in words:
-            if trim(word.txt.lower()) in beroepen:
+            if (word.txt.lower().find("schilder")>-1):
+                println(trim(word.txt.lower()) + "  -->  " + trim(word.txt.lower()).strip(",").strip("."))
+                
+            if trim(word.txt.lower()).strip(",").strip(".") in beroepen:
                 word.type = "beroep"
 
     elif key==' ':
