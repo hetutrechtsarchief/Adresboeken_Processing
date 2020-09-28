@@ -4,7 +4,7 @@ Mensen kunnen snel patronen herkennen in de structuur van een (gescand) document
 
 Voor computers zijn deze patronen tot nu toe nog een stuk moeilijker te herkennen al wordt hier uiteraard een hoop onderzoek naar gedaan in de wereld van AI en machine learning.
 
-Dit experiment (een Processing script) probeert een aantal technieken uit waarbij de mens en de computer samenwerken om snel - met zo weinig mogelijk repeterende handelingen - de structuur van gegevens in een pagina te herkennen/aan te geven.
+Dit experiment (een Processing script zonder AI) probeert een aantal technieken uit waarbij de mens en de computer samenwerken om snel - met zo weinig mogelijk repeterende handelingen - de structuur van gegevens in een pagina te herkennen/aan te geven.
 
 Het is een levend script dat steeds wordt aangepast en wordt voorzien van nieuwe regels (als in 'rules') die tot nu toe onder sneltoetsen zijn ondergebracht. Uiteindelijk moeten de regels in herbruikbare blokjes na elkaar kunnen worden uitgevoerd als Macro's die tot je beschikking staan en waarbij je telkens kunt ingrijpen en sturen.
 
